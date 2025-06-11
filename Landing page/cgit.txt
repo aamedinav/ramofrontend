@@ -1,0 +1,40 @@
+git init:
+Crea un nuevo repositorio Git en el directorio actual. Si no hay un repositorio existente, este comando lo inicializa. 
+git add <archivo.ext>:
+Añade un archivo al área de preparación (staging) antes de hacer un commit. También puedes añadir todos los archivos con git add . o los cambios en un directorio con git add <directorio>. 
+git commit -m "mensaje":
+Confirma los cambios en el área de preparación, guardando una instantánea del proyecto con un mensaje descriptivo. El mensaje es una descripción de los cambios realizados. 
+git status:
+Muestra el estado del repositorio, indicando qué archivos han sido modificados, añadidos o están en el área de preparación. 
+git push:
+Sube los commits locales a un repositorio remoto. Por lo general, se usa con git push origin main para subir a la rama principal. 
+git pull:
+Descarga los cambios del repositorio remoto y los fusiona con tu repositorio local. Es una combinación de git fetch y git merge. 
+git branch:
+Muestra las ramas locales, crea una nueva rama o elimina una existente. 
+git checkout <nombre_de_rama>:
+Cambia a una rama específica. También puedes crear una nueva rama y cambiar a ella con git checkout -b <nombre_de_rama>. 
+git merge <nombre_de_rama>:
+Fusiona una rama con otra. Por lo general, se usa para fusionar una rama de desarrollo con la rama principal. 
+git log:
+Muestra el historial de commits del repositorio, incluyendo información como autor, fecha y mensaje del commit. 
+git reset <commit>:
+Deshace cambios locales, volviendo al estado de un commit anterior. Hay diferentes opciones de reset (soft, mixed, hard) dependiendo de si quieres conservar los cambios o no. 
+git remote add <nombre> <url>:
+Añade un nuevo repositorio remoto al repositorio local. 
+git diff:
+Muestra las diferencias entre diferentes versiones de un archivo o entre diferentes commits. 
+git diff <commit> <archivo>:
+Muestra las diferencias entre una versión específica de un archivo y la versión actual. 
+git remote -v:
+Muestra las URLs de los repositorios remotos, tanto para fetch (descargar) como para push (subir). 
+git fetch:
+Descarga los cambios del repositorio remoto sin fusionarlos automáticamente con tu repositorio local. 
+git stash:
+Guarda temporalmente los cambios locales en un "stash" para poder cambiar de rama o hacer otras tareas sin perder el trabajo actual. Luego puedes recuperar los cambios con git stash pop. 
+git revert:
+Crea un nuevo commit que revierta los cambios de un commit específico. Esto ayuda a deshacer errores sin borrar el historial. 
+git restore:
+Restaura archivos a una versión anterior. Puede ser utilizado para restaurar archivos desde el área de preparación o desde el historial del repositorio. 
+
+Estos son algunos de los comandos más comunes y útiles de Git. Con práctica y experimentación, podrás dominar la gran variedad de opciones que Git ofrece.
